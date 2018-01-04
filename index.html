@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <!-- Time taken for survey (questions only): ~57.28s 
+    Survey url: http://tinyurl.com/hanfordbullyapp -->
+    <head>
+        <title>Anti-Bullying App, until we come up with a better title</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <style>
+            #title {
+                font-family: 'Oswald', sans-serif;
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .bigButton {
+                font-family: 'Oswald', sans-serif;
+                font-size: 30px;
+                margin: auto;
+                padding: 20px 20px 20px 20px;
+                width: 30%;
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #reportB {
+                background-color: red;
+            }
+            #infoB {
+                background-color: blue;
+            }
+            #content-container {
+                position: relative;
+                margin-top: 15%;
+            }
+        </style>
+        <script>
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                alert("MOBILE DETECTED!");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="content-container">
+            <div id="title">[PLACEHOLDER TITLE]</div>
+            <div id="reportB" class="bigButton" onclick="alert('Hello World!')">Report</div>
+            <div id="infoB" class="bigButton" onclick="alert('Hello World!')">Information</div>
+        </div>
+    </body>
+</html>
