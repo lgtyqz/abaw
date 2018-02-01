@@ -58,24 +58,39 @@
                 top: 100%;
                 left: 0%;
             }
+            #report-screen-holder {
+                margin-top: 5%;
+            }
+            #reportScreenTitle {
+                font-family: 'Oswald', sans-serif;
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 40px;
+                color: white;
+            }
         </style>
         <script>
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
                 alert("MOBILE DETECTED!");
                 window.location.href = "https://lgtyqz.github.io/mabaw/";
             }
+            /*function moveUp(){
+                document.getElementById("splash-screen-container").style.top 
+            }*/
         </script>
     </head>
     <body>
         <div id="splash-screen-container">
             <div id="splash-screen-holder">
                 <div id="title">[PLACEHOLDER TITLE]</div>
-                <div id="reportB" class="bigButton" onclick="alert('Hello World!')">Report</div>
+                <div id="reportB" class="bigButton" onclick="document.getElementById('splash-screen-container').style.top = '-100%';document.getElementById('report-screen-container').style.top = '0%';">Report</div>
                 <div id="infoB" class="bigButton" onclick="alert('Hello World!')">Information</div>
             </div>
         </div>
         <div id="report-screen-container">
-            
+            <div id="report-screen-holder">
+                <div id="reportScreenTitle">[lol wut]</div>
+            </div>
         </div>
     </body>
 </html>
