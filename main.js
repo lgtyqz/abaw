@@ -4,7 +4,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 }
 //Put each div object into a array
 //
-alert("WORKING");
+//alert("WORKING");
 var slides = document.getElementsByClassName("slide");
 window.onload = function(){
     transition(0);
